@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>Кочетков Станислав Системный администратор (москва, РФ)</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/cchambers/basicss/master/basi.css">
+  <style>
+    @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic);
+
+    *,
+    *:before,
+    *:after{
+      height: auto;
+    }
+
+    html {
+      letter-spacing: .5px;
+      color: #BABABA
+      font-family: "Ubuntu Mono", "Lucida Console", Monaco, monospace !important
+    }
+
+    body {
+      background-color: #222324;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #8E69C9;
+      padding-bottom: 1.5rem;
+      font-weight: 100;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    section {
+      background-color: rgba(7, 54, 66, 0);
+      transition: all 250ms ease;
+      transform: translateZ(0);
+    }
+
+
+    section.closed {
+      cursor: pointer;
+    }
+
+    section:hover{
+      background: rgba(255,255,255,.05);
+    }
+
+    section:before,
+    section:after{
+      white-space: pre;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #68C244;
+      cursor: pointer;
+    }
+
+    section:before {
+      display: block;
+      content: attr(id)" ( ) {";
+    }
+
+    section:after {
+      display: block;
+      width: 100%;
+      clear: both;
+      content: "}";
+    }
+
+    section.closed:before {
+      display: block;
+      content: attr(id)" ( ) { ... }";
+    }
+
+    section.closed:after {
+      display: none
+    }
+
+    section * {
+      transition: all 250ms linear;
+    }
+
+    section.closed * {
+      height: 0;
+      opacity: 0;
+      transition: all 0ms linear;
+      visibility: hidden;
+      padding: 0; margin: 0;
+    }
+
+
+    strong {
+      font-weight: 100;
+      color: #F08D24;
+    }
+
+    p, ul {
+      color: #BABABA;
+    }
+
+    li {
+      padding-bottom: .75rem;
+      padding-top: .75rem;
+    }
+
+    .gray {
+      color: #666;
+      color: rgba(255,255,255,.25);
+    }
+
+    .comment{
+      color: #494B4D;
+      font-size: 2rem;
+    }
+
+    .comment:before{
+      display: block;
+      content: "// "attr(title);
+      font-weight: normal;
+      margin-top: .5rem;
+    }
+
+    a       { color: #F2D42C }
+    a:hover { color: #F8F2A5 }
+
+
+    h1{
+      cursor: pointer;
+      color: #F8F2A5;
+      font-weight: 100;
+      font-family: "Ubuntu Mono";
+    }
+
+    .cursor{
+      display: inline-block;
+      width: .3rem;
+      background: #68C244;
+      height: 3rem;
+      margin-bottom: -2px;
+      -webkit-animation: blink .5s infinite alternate linear;
+    }
+
+    p:before,
+    p:after{
+      content:'"';
+    }
+
+    @-webkit-keyframes blink {
+      from{ opacity: 1 }
+      to{ opacity: 0 }
+    }
+    @-moz-keyframes blink {
+      from{ opacity: 1 }
+      to{ opacity: 0 }
+    }
+    @-o-keyframes blink {
+      from{ opacity: 1 }
+      to{ opacity: 0 }
+    }
+    @keyframes blink {
+      from{ opacity: 1 }
+      to{ opacity: 0 }
+    }
+
+    html,
+    h1,h2,h3,
+    p, ul, a, strong,
+    section:before, section:after,
+    .cursor, .me, .comment, .gray{
+      transition: color 350ms ease-out, background 350ms ease-out;
+    }
+    @media screen and (min-width: 600px)  {
+        .mobile-break { display: none; }
+    }
+    .pink {
+      color:#8e69c9;
+      font-family:'Courier';
+    }
+  </style>
+
+  <style id="theme" >
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="contain">
+      <div class="pad">
+        <h1 class="me px50 lh50 col-1-2">
+          {{ headline }}
+        </h1>
+       <h1 class="me px15 lh50 col-2-2 pink ">
+          1991 года рождения, г.Москва, Россия
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="contain">
+      <section id="Обо мне" class="pad closed">
+  <div class="comment" title="сопроводительное письмо"></div>
+
+  <ul class="pad-left pad-bottom-light">
+    <li>
+      <p> Долгое время моя основная деятельность была связана с финансами. Тем не менее с самого детства я с был увлечен компьютерами. Проработав в отделе финансов в международной компании полтора года я убедился в том, что данный путь не для меня. Появилось стойкое намерение поменять свою профессиональную деятельность — я пошел переучиваться на <strong>системного администратора</strong>.
+	Учеба подарила мне множество позитивных эмоций и ценных знаний. На каждом занятии я ощущал себя в своей тарелке. После получения диплома я перевелся в IT-отдел, в котором работаю по сей день. К сожалению, сетевая  и компьютерная структура компании, в которой я работаю, довольно ограничена, поэтому мои обязанности по большей части сводятся к обязанностям anykey-специалиста, что меня абсолютно не устраивает. У меня есть огромное желание идти дальше и не терять время — я хочу работать с серверами, железным оборудованием, заниматься траблшутингом, проектированием или масштабированием сети. Хочется постоянно учиться и набираться опыта в команде профессионалов, дабы впоследствии стать отличным специалистом в данной сфере. Через десять лет я вижу себя компетентным администратором крупной, сложной и территориально распределенной сетевой инфраструктуры.</p>
+    </li>
+
+  </ul>
+</section>
+    <section id="опыт" class="pad closed">
+      <div class="comment" title="займись любимым делом, и ты не будешь работать ни одного дня в своей жизни">
+      <ul class="pad-left">
+          <li>
+          <h2>
+            Системный администратор
+            <div class="normal">2018 - настоящее время, <em>TLT Group</em></div>
+          </h2>
+          <p class="pad-bottom-light">Поддержание, обслуживание и развитие компьютерной и сетевой инфраструктуры компании, которая включает в себя систему видеонаблюдения, ip-телефонию, криптографические устройства, рабочие станции, принтеры, программное обеспечение. </p>
+        </li>
+        <li>
+          <h2>
+            Финансовый Менеджер, <em>TLT Group</em>
+            <div class="normal">2015 - 2018</div>
+          </h2>
+          <p class="pad-bottom-light">Контроль финансовых потоков компании, участие в работе с кредиторской и дебиторской задолженностью, ведение финансовой отчетности.</p>
+
+        </li>
+
+      </ul>
+</div>
+    </section>
+
+    <section id="образование" class="pad closed">
+      <div class="comment" title="учиться, учиться и еще раз учиться..."></div>
+
+      <base target="_new">
+      <h2 class="pad-left-light" style="padding-top:.5rem">Высшее образование</h2>
+      <ul class="pad-left pad-bottom-light">
+        <li>
+          Алтайский государственный университет <br class="mobile-break">[<strong> Переводчик/бакалавр филологии </strong>]
+        </li>
+        <li>
+           Финансовый Университет при Правительстве РФ <br class="mobile-break">[<strong> Финансовый менеджер/<br class="mobile-break">Магистр финансов </strong>]
+        </li>
+        <li>
+          Учебный центр "СПЕЦИАЛИСТ" при МГТУ им. Н.Э. Баумана <br class="mobile-break">[<strong> Сертифицированный системный администратор </strong>]
+        </li>
+        </ul>
+        <h2 class="pad-left-light" style="padding-top:.5rem">Сертификаты, курсы</h2>
+        <ul class="pad-left pad-bottom-light">
+        <li>
+          Курс Computer Science 50 <br class="mobile-break">[<strong> Harvard X/Harvard University </strong>]
+        </li>
+        <li>
+           Курс Windows Server 2016 <br class="mobile-break">[<strong> Udemy </strong>]
+        </li>
+        <li>
+           Курс CCNA Routing & Switching, CCNA Security <br class="mobile-break">[<strong> Cisco </strong>]
+        </li>
+        <li>
+          Курс Programming Web Applications with Python and Javascript <br class="mobile-break">[<strong> Harvard X/Harvard University </strong>]
+        </li>
+        <li>
+          Экзамен IELTS (международная система оценки знания английского языка) <br>[<strong> Оценка 8.0 — Очень хороший пользователь </strong>]
+        </li>
+      </ul></base>
+    </section>
+
+    <section id="навыки" class="pad closed">
+      <div class="comment" title="ô¿ô"></div>
+          <h2 class="pad-left-light" style="padding-top:.5rem">
+        Сетевые технологии и администрирование
+      </h2>
+      <ul class="pad-left pad-bottom-light">
+        <li>
+          Windows Server 2016 <br class="mobile-break">[<strong> установка, администрирование </strong>]
+        </li>
+        <li>
+          Windows Server <br class="mobile-break">(AD, DNS, DHCP, GPO, WSUS, Backup) <br class="mobile-break">[<strong> теория и самостоятельная практика администрирования </strong>]
+        </li>
+        <li>
+          Виртуальные машины, серверы <br class="mobile-break">(Vmware, VirtualBox) <br class="mobile-break">[<strong> развертывание, менеджмент, апгрейд </strong>]
+        </li>
+        <li>
+          Основы сетей <br class="mobile-break">(DHCP, DNS, WIFI, Routing, Switching, VLAN, VPN) <br class="mobile-break">[<strong> теоретические знания </strong>]
+        </li>
+      </ul>
+
+      <h2 class="pad-left-light" style="padding-top:.5rem">
+        Программирование
+      </h2>
+      <ul class="pad-left pad-bottom-light">
+          <li>
+          C [<strong> теория, практика </strong>]
+        </li>
+        <li>
+          HTML5 [<strong> теория, практика </strong>]
+        </li>
+        <li>
+          CSS3 [<strong> теория, практика </strong>]
+        </li>
+        <li>
+          Git [<strong> теория, практика </strong>]
+        </li>
+        <li>
+          В свободное время <br class="mobile-break"> самостоятельно [<strong> изучаю </strong>]
+        </li>
+        <ul class="pad-left">
+          <li>
+            JavaScript (React) & Pyhon (Flask/Django) & SQL (PostgreSQL)
+          </li>
+        </ul>
+        </ul>
+      <h2 class="pad-left-light" style="padding-top:.5rem">
+        Программное обеспечение
+      </h2>
+      <ul class="pad-left pad-bottom-light">
+        <li>
+          <b>Редакторы:</b> Sublime, Atom, Notepad, etc.
+        </li>
+        <li>
+          <b>Репозитории:</b> Github
+        </li>
+        <li>
+          <b>Графические редакторы:</b> Adobe Photoshop
+        </li>
+        <li>
+          <b>Microsoft Office:</b> Word, Excel, PowerPoint, Outlook
+        </li>
+        <li>
+          <b>1С:</b> Бухгалтерия, Битрикс <br class="mobile-break">[<strong> контент-менеджмент, администрирование </strong>]
+        </li>
+
+        </ul>
+
+        <h2 class="pad-left-light" style="padding-top:.5rem">
+        Операционные системы
+      </h2>
+      <ul>
+	<li>
+	  ОС Windows 7, 8, 10, MacOS <br class="mobile-break">[<strong> установка и администрирование </strong>]
+	</li>
+      </ul>
+      <h2 class="pad-left-light" style="padding-top:.5rem">
+        Прочие навыки
+      </h2>
+      <ul>
+	<li>
+	  Контроль расходных материалов компании, заказ и замена картриджей
+	</li>
+	<li>
+	  Техническая поддержка пользователей
+	</li>
+	<li>
+	    Диагностика и устранение неисправностей серверов и активного сетевого оборудования, операционных систем, рабочих станций
+	</li>
+		<li>
+	    Сборка рабочих станций, узловой ремонт
+	</li>
+	<li>
+	    Решение проблем и вопросов сотрудников, связанных с работой компьютерного оборудования, ПО, оргтехники, средств телефонной связи
+	</li>
+	<li>
+	    Выполнение работ по установке (монтаж/демонтаж) компьютерного оборудования, оргтехники, средств телефонной связи, а также установке и настройке ПО
+	</li>
+      </ul>
+       <h2 class="pad-left-light" style="padding-top:.5rem">
+        Soft-skills
+      </h2>
+      <ul>
+	<li>
+	 умение слушать другого человека
+	</li>
+	<li>
+	 умение задавать вопросы
+	</li>
+	<li>
+	 умение вести деловую переписку <br class="mobile-break">[<strong> Русский/English </strong>]
+	</li>
+		<li>
+	 умение управлять стрессом
+	</li>
+	<li>
+	 умение планировать рабочее время
+	</li>
+      </ul>
+      <h2 class="pad-left-light" style="padding-top:.5rem">
+        Языки
+      </h2>
+      <ul>
+	<li>
+	 Русский язык <br class="mobile-break">[<strong> грамотная письменная и устная речь </strong>]
+	</li>
+	<li>
+	 Английский язык <br class="mobile-break">[<strong> свободный письменный и устный. <br class="mobile-break">IELTS - 8.0 Proficient User </strong>]
+	</li>
+      </ul>
+</section>
+
+
+
+<div class="nothin pad">
+  <div class="cursor blink" />
+</div>
+
+<div class="gray text-center pad-top px14">
+  tel: <a href="tel:+7-999-475-9994">+7-999-475-9994</a><br>
+  E-mail: <a href="mailto:theashrayheart1996@gmail.com">theashrayheart1996@gmail.com</a><br>
+  Личный сайт: <a href="http://pcmr.site">pcmr.site</a>
+</div>
+</main>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+  var themes = [];
+  var which = 0;
+
+  $(document).ready( function () {
+
+    themes = $("[media=template]")
+    $("section").on("click", function () {
+      $(this).toggleClass("closed");
+    });
+
+    $("section *").on("click", function (e) {
+      e.stopPropagation();
+    });
+
+    $('.me').on("click", toggleTheme);
+  });
+
+  function toggleTheme () {
+    which++;
+    if (which == themes.length) which = 0;
+    var themedata = $(themes[which]).text();
+    $("#theme").text( themedata )
+  }
+</script>
+
+<script>
+  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  // ga('create', 'UA-31162949-1', 'auto');
+  // ga('send', 'pageview');
+
+</script>
+</body>
+</html>
