@@ -5,6 +5,10 @@
 <body>
   <section>
     <h1 style = "text-align:center;"> Is it Stanisalv's BD?</h1>
-    <h3 style = "text-align:center; color:red;"> {{ stanbd }} </h3>
+    {% if stanbd %}
+    <h3 style = "text-align:center; color:red;"> Ураа, у Стаса ДР!</h3>
+    {% else %}
+    <h3 style = "text-align:center; color:red;"> Еще рано, потерпите немного!</h3>
+    {% endif %}
   </section>
   </body>
